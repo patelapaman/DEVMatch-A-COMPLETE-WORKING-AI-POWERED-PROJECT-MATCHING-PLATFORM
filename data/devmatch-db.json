@@ -1,0 +1,1132 @@
+{
+  "users": {
+    "user-alex-dev": {
+      "uid": "user-alex-dev",
+      "name": "Alex Rivera",
+      "email": "alex.dev@example.com",
+      "role": "developer",
+      "passwordHash": "dev123",
+      "profileImageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "bio": "Audited bio update",
+      "location": "San Francisco, CA / Remote",
+      "education": "B.S. in Computer Science, UC Berkeley",
+      "experienceLevel": "Intermediate",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "SQL",
+        "Git",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "preferredTechnologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "interests": [
+        "Full-Stack Development",
+        "AI Tools",
+        "Open-Source",
+        "Cloud Infrastructure"
+      ],
+      "portfolioUrl": "https://alexrivera.dev",
+      "githubUrl": "https://github.com/alexrivera-dev",
+      "linkedinUrl": "https://linkedin.com/in/alexrivera-dev",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:27:30.380Z"
+    },
+    "user-sarah-lead": {
+      "uid": "user-sarah-lead",
+      "name": "Sarah Chen",
+      "email": "sarah.recruiter@example.com",
+      "role": "recruiter",
+      "passwordHash": "lead123",
+      "profileImageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "bio": "Engineering Lead & Project Architect building high-performance developer tools and AI analytics platforms.",
+      "location": "Seattle, WA / Remote",
+      "education": "M.S. Software Engineering",
+      "experienceLevel": "Advanced",
+      "skills": [
+        "Architecture",
+        "TypeScript",
+        "Node.js",
+        "Kubernetes",
+        "System Design"
+      ],
+      "preferredTechnologies": [
+        "TypeScript",
+        "Go",
+        "GCP",
+        "PostgreSQL"
+      ],
+      "interests": [
+        "Distributed Systems",
+        "Mentorship",
+        "Open Source"
+      ],
+      "portfolioUrl": "https://sarahchen.io",
+      "githubUrl": "https://github.com/sarahchen-eng",
+      "linkedinUrl": "https://linkedin.com/in/sarahchen-eng",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:01:29.468Z"
+    },
+    "user-1793384108486-01nj": {
+      "uid": "user-1793384108486-01nj",
+      "name": "Test Candidate",
+      "email": "test.user.1793384108480@example.com",
+      "role": "developer",
+      "passwordHash": "password123",
+      "experienceLevel": "Beginner",
+      "skills": [
+        "React",
+        "TypeScript"
+      ],
+      "preferredTechnologies": [],
+      "interests": [],
+      "createdAt": "2026-10-30T18:15:08.486Z",
+      "updatedAt": "2026-10-30T18:15:08.486Z"
+    },
+    "user-1793384109144-maqw": {
+      "uid": "user-1793384109144-maqw",
+      "name": "Applicant Tester",
+      "email": "applicant.1793384109142@example.com",
+      "role": "developer",
+      "passwordHash": "password123",
+      "experienceLevel": "Beginner",
+      "skills": [
+        "Python",
+        "SQL"
+      ],
+      "preferredTechnologies": [],
+      "interests": [],
+      "createdAt": "2026-10-30T18:15:09.144Z",
+      "updatedAt": "2026-10-30T18:15:09.144Z"
+    },
+    "user-1793384206892-5noy": {
+      "uid": "user-1793384206892-5noy",
+      "name": "Test Candidate",
+      "email": "test.user.1793384206882@example.com",
+      "role": "developer",
+      "passwordHash": "password123",
+      "experienceLevel": "Beginner",
+      "skills": [
+        "React",
+        "TypeScript"
+      ],
+      "preferredTechnologies": [],
+      "interests": [],
+      "createdAt": "2026-10-30T18:16:46.892Z",
+      "updatedAt": "2026-10-30T18:16:46.892Z"
+    },
+    "user-1793384207554-35fc": {
+      "uid": "user-1793384207554-35fc",
+      "name": "Applicant Tester",
+      "email": "applicant.1793384207553@example.com",
+      "role": "developer",
+      "passwordHash": "password123",
+      "experienceLevel": "Beginner",
+      "skills": [
+        "Python",
+        "SQL"
+      ],
+      "preferredTechnologies": [],
+      "interests": [],
+      "createdAt": "2026-10-30T18:16:47.554Z",
+      "updatedAt": "2026-10-30T18:16:47.554Z"
+    },
+    "user-1793384850365-mls4": {
+      "uid": "user-1793384850365-mls4",
+      "name": "Test Candidate",
+      "email": "test.user.1793384850351@example.com",
+      "role": "developer",
+      "passwordHash": "password123",
+      "experienceLevel": "Beginner",
+      "skills": [
+        "React",
+        "TypeScript"
+      ],
+      "preferredTechnologies": [],
+      "interests": [],
+      "createdAt": "2026-10-30T18:27:30.365Z",
+      "updatedAt": "2026-10-30T18:27:30.365Z"
+    },
+    "user-1793384851114-vl8e": {
+      "uid": "user-1793384851114-vl8e",
+      "name": "Applicant Tester",
+      "email": "applicant.1793384851112@example.com",
+      "role": "developer",
+      "passwordHash": "password123",
+      "experienceLevel": "Beginner",
+      "skills": [
+        "Python",
+        "SQL"
+      ],
+      "preferredTechnologies": [],
+      "interests": [],
+      "createdAt": "2026-10-30T18:27:31.114Z",
+      "updatedAt": "2026-10-30T18:27:31.114Z"
+    }
+  },
+  "projects": {
+    "proj-nexus-analytics": {
+      "id": "proj-nexus-analytics",
+      "title": "Nexus Real-Time Developer Analytics Dashboard",
+      "slug": "nexus-real-time-developer-analytics",
+      "shortDescription": "Build high-performance real-time telemetry visualizers for distributed microservices.",
+      "description": "Nexus is an open telemetry exploration dashboard. We are building interactive data visualization components, streaming metric graphs, and latency heatmaps using React, TypeScript, and modern canvas technologies. Candidates will collaborate with our distributed core team to deliver sub-second rendering for millions of event points.",
+      "requiredSkills": [
+        "React",
+        "TypeScript",
+        "JavaScript"
+      ],
+      "optionalSkills": [
+        "Tailwind CSS",
+        "REST APIs",
+        "Node.js"
+      ],
+      "experienceLevel": "Intermediate",
+      "category": "Frontend",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Chart.js",
+        "Vite"
+      ],
+      "projectType": "Open-source",
+      "location": "Remote (Worldwide)",
+      "remoteAllowed": true,
+      "duration": "3 months",
+      "numberOfOpenings": 3,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen (Nexus Core Team)",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-12-15",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:01:29.468Z"
+    },
+    "proj-hypercloud-api": {
+      "id": "proj-hypercloud-api",
+      "title": "HyperCloud Resilient API Gateway Engine",
+      "slug": "hypercloud-resilient-api-gateway",
+      "shortDescription": "Construct fault-tolerant Node.js proxy layers with distributed rate-limiting and token verification.",
+      "description": "Looking for a backend engineer to implement an enterprise-grade gateway service handling rate limits, JWT session authentication, circuit-breaking, and audit logging. Ideal for engineers wanting hands-on exposure to high-concurrency systems design.",
+      "requiredSkills": [
+        "Node.js",
+        "TypeScript",
+        "REST APIs"
+      ],
+      "optionalSkills": [
+        "SQL",
+        "Git",
+        "Docker"
+      ],
+      "experienceLevel": "Intermediate",
+      "category": "Backend",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "TypeScript",
+        "Redis",
+        "PostgreSQL"
+      ],
+      "projectType": "Full-time",
+      "location": "San Francisco, CA / Remote",
+      "remoteAllowed": true,
+      "duration": "Ongoing",
+      "numberOfOpenings": 2,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-11-30",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:01:29.468Z"
+    },
+    "proj-gemini-code-tutor": {
+      "id": "proj-gemini-code-tutor",
+      "title": "CodeMentor AI: Interactive Programming Assistant",
+      "slug": "codementor-ai-interactive-assistant",
+      "shortDescription": "Integrate Gemini API with code execution sandboxes for intelligent feedback and automated test generation.",
+      "description": "CodeMentor empowers student developers by providing contextual hints, algorithmic complexity analysis, and automated test-case generation. You will craft structured prompt engineering pipelines, streaming UI elements, and AST parsing hooks.",
+      "requiredSkills": [
+        "Python",
+        "JavaScript",
+        "REST APIs"
+      ],
+      "optionalSkills": [
+        "React",
+        "TypeScript",
+        "Data Structures and Algorithms"
+      ],
+      "experienceLevel": "Beginner",
+      "category": "AI & ML",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Gemini API",
+        "React",
+        "TypeScript"
+      ],
+      "projectType": "Student Project",
+      "location": "Remote",
+      "remoteAllowed": true,
+      "duration": "4 months",
+      "numberOfOpenings": 4,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen (AI Lab)",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-12-31",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:01:29.468Z"
+    },
+    "proj-dataflow-pipeline": {
+      "id": "proj-dataflow-pipeline",
+      "title": "OmniData Distributed ETL & Stream Engine",
+      "slug": "omnidata-distributed-etl-stream-engine",
+      "shortDescription": "Build high-throughput SQL transformation pipelines and indexing microservices.",
+      "description": "Work with transactional SQL databases and big data connectors to normalize heterogeneous JSON events into structured relational warehouses. Focuses heavily on algorithmic optimization and query performance tuning.",
+      "requiredSkills": [
+        "SQL",
+        "Python",
+        "Data Structures and Algorithms"
+      ],
+      "optionalSkills": [
+        "Git",
+        "Node.js"
+      ],
+      "experienceLevel": "Advanced",
+      "category": "Data Science",
+      "technologies": [
+        "PostgreSQL",
+        "Python",
+        "Apache Kafka",
+        "DuckDB"
+      ],
+      "projectType": "Internship",
+      "location": "Austin, TX / Remote",
+      "remoteAllowed": true,
+      "duration": "6 months",
+      "numberOfOpenings": 2,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-12-01",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:01:29.468Z"
+    },
+    "proj-mobile-devmatch": {
+      "id": "proj-mobile-devmatch",
+      "title": "DevMatch Native Companion App",
+      "slug": "devmatch-native-companion",
+      "shortDescription": "Cross-platform mobile client for developers to receive project push notifications and review quiz cards.",
+      "description": "Creating an ultra-responsive companion app featuring offline assessment practice, project bookmark sync, and recruiter chat hooks.",
+      "requiredSkills": [
+        "React",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "optionalSkills": [
+        "REST APIs",
+        "Git"
+      ],
+      "experienceLevel": "Beginner",
+      "category": "Mobile",
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "Expo",
+        "Tailwind CSS"
+      ],
+      "projectType": "Part-time",
+      "location": "Remote",
+      "remoteAllowed": true,
+      "duration": "3 months",
+      "numberOfOpenings": 2,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-11-20",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:01:29.468Z"
+    },
+    "proj-algo-visualizer": {
+      "id": "proj-algo-visualizer",
+      "title": "AlgorithmLab 3D Dynamic Visualizer",
+      "slug": "algorithmlab-3d-dynamic-visualizer",
+      "shortDescription": "Interactive educational platform displaying pathfinding, tree traversals, and dynamic programming states.",
+      "description": "A community open-source project visualizing complex computer science algorithms step-by-step with state checkpoints and explanatory narration.",
+      "requiredSkills": [
+        "Data Structures and Algorithms",
+        "JavaScript"
+      ],
+      "optionalSkills": [
+        "TypeScript",
+        "React",
+        "HTML"
+      ],
+      "experienceLevel": "All Levels",
+      "category": "Open-Source",
+      "technologies": [
+        "JavaScript",
+        "HTML5 Canvas",
+        "CSS3",
+        "Vite"
+      ],
+      "projectType": "Open-source",
+      "location": "Remote",
+      "remoteAllowed": true,
+      "duration": "Flexible",
+      "numberOfOpenings": 5,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2027-01-31",
+      "createdAt": "2026-10-30T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:01:29.468Z"
+    },
+    "proj-1793384108505-obb3": {
+      "id": "proj-1793384108505-obb3",
+      "title": "Audit Integration Project 1793384108503",
+      "slug": "audit-integration-project-1793384108503",
+      "description": "Integration test project description for audit",
+      "shortDescription": "Integration test project description for audit",
+      "requiredSkills": [
+        "React",
+        "TypeScript"
+      ],
+      "optionalSkills": [
+        "Tailwind CSS"
+      ],
+      "experienceLevel": "Intermediate",
+      "category": "Frontend",
+      "technologies": [
+        "React",
+        "Node.js"
+      ],
+      "projectType": "Open-source",
+      "location": "Remote",
+      "remoteAllowed": false,
+      "duration": "3 months",
+      "numberOfOpenings": 1,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-11-29",
+      "createdAt": "2026-10-30T18:15:08.505Z",
+      "updatedAt": "2026-10-30T18:15:08.505Z"
+    },
+    "proj-1793384206907-dv01": {
+      "id": "proj-1793384206907-dv01",
+      "title": "Audit Integration Project 1793384206906",
+      "slug": "audit-integration-project-1793384206906",
+      "description": "Integration test project description for audit",
+      "shortDescription": "Integration test project description for audit",
+      "requiredSkills": [
+        "React",
+        "TypeScript"
+      ],
+      "optionalSkills": [
+        "Tailwind CSS"
+      ],
+      "experienceLevel": "Intermediate",
+      "category": "Frontend",
+      "technologies": [
+        "React",
+        "Node.js"
+      ],
+      "projectType": "Open-source",
+      "location": "Remote",
+      "remoteAllowed": false,
+      "duration": "3 months",
+      "numberOfOpenings": 1,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-11-29",
+      "createdAt": "2026-10-30T18:16:46.907Z",
+      "updatedAt": "2026-10-30T18:16:46.907Z"
+    },
+    "proj-1793384850387-7hxy": {
+      "id": "proj-1793384850387-7hxy",
+      "title": "Alex Personal Portfolio Engine 1793384850386",
+      "slug": "alex-personal-portfolio-engine-1793384850386",
+      "description": "An open-source portfolio builder with Next.js and Tailwind",
+      "shortDescription": "An open-source portfolio builder with Next.js and Tailwind",
+      "requiredSkills": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "optionalSkills": [
+        "Vercel"
+      ],
+      "experienceLevel": "Intermediate",
+      "category": "Frontend",
+      "technologies": [
+        "React",
+        "Node.js"
+      ],
+      "projectType": "Personal Project",
+      "location": "Remote",
+      "remoteAllowed": true,
+      "duration": "Flexible",
+      "numberOfOpenings": 1,
+      "ownerId": "user-alex-dev",
+      "ownerName": "Alex Rivera",
+      "ownerEmail": "alex.dev@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-12-29",
+      "isPersonalProject": true,
+      "githubUrl": "https://github.com/alexdev/portfolio-engine",
+      "liveDemoUrl": "https://portfolio-engine.dev",
+      "lookingFor": "Designers and contributors welcome",
+      "createdAt": "2026-10-30T18:27:30.387Z",
+      "updatedAt": "2026-10-30T18:27:30.387Z"
+    },
+    "proj-1793384850391-t63x": {
+      "id": "proj-1793384850391-t63x",
+      "title": "Audit Integration Project 1793384850389",
+      "slug": "audit-integration-project-1793384850389",
+      "description": "Integration test project description for audit",
+      "shortDescription": "Integration test project description for audit",
+      "requiredSkills": [
+        "React",
+        "TypeScript"
+      ],
+      "optionalSkills": [
+        "Tailwind CSS"
+      ],
+      "experienceLevel": "Intermediate",
+      "category": "Frontend",
+      "technologies": [
+        "React",
+        "Node.js"
+      ],
+      "projectType": "Full-time",
+      "location": "Remote",
+      "remoteAllowed": true,
+      "duration": "Flexible",
+      "numberOfOpenings": 1,
+      "ownerId": "user-sarah-lead",
+      "ownerName": "Sarah Chen",
+      "ownerEmail": "sarah.recruiter@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-12-29",
+      "isPersonalProject": false,
+      "createdAt": "2026-10-30T18:27:30.391Z",
+      "updatedAt": "2026-10-30T18:27:30.391Z"
+    },
+    "proj-1793384973605-zpfe": {
+      "id": "proj-1793384973605-zpfe",
+      "title": "NeuroCanvas — Collaborative AI Whiteboard",
+      "slug": "neurocanvas-collaborative-ai-whiteboard",
+      "description": "NeuroCanvas is my personal open-source whiteboard tool designed for developers to sketch architecture diagrams collaboratively with instant AI-assisted diagram generation.",
+      "shortDescription": "Infinite canvas with real-time vector shapes and AI copilot",
+      "requiredSkills": [
+        "React",
+        "TypeScript",
+        "Canvas API",
+        "WebSockets"
+      ],
+      "optionalSkills": [],
+      "experienceLevel": "All Levels",
+      "category": "Full-Stack",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Canvas API",
+        "WebSockets"
+      ],
+      "projectType": "Personal Project",
+      "location": "Remote",
+      "remoteAllowed": true,
+      "duration": "Flexible",
+      "numberOfOpenings": 2,
+      "ownerId": "user-alex-dev",
+      "ownerName": "Alex Rivera",
+      "ownerEmail": "alex.dev@example.com",
+      "status": "open",
+      "applicationDeadline": "2026-12-29",
+      "isPersonalProject": true,
+      "githubUrl": "https://github.com/alexrivera/neurocanvas",
+      "liveDemoUrl": "https://neurocanvas.live",
+      "lookingFor": "Seeking Collaborators & Feedback",
+      "createdAt": "2026-10-30T18:29:33.605Z",
+      "updatedAt": "2026-10-30T18:29:33.605Z"
+    }
+  },
+  "assessments": {
+    "user-alex-dev": [
+      {
+        "assessmentId": "asmt-alex-react-1",
+        "userId": "user-alex-dev",
+        "skill": "React",
+        "initialDifficulty": "Intermediate",
+        "finalDifficulty": "Advanced",
+        "totalQuestions": 10,
+        "correctAnswers": 9,
+        "incorrectAnswers": 1,
+        "percentageScore": 90,
+        "proficiencyLevel": "Expert",
+        "questionHistory": [],
+        "completedAt": "2026-10-28T18:01:29.468Z",
+        "durationSeconds": 320,
+        "aiGeneratedQuestionCount": 8,
+        "fallbackQuestionCount": 2,
+        "strengths": [
+          "Mastery of React hooks, component lifecycles, and reconciliation.",
+          "Concurrent rendering and scheduler prioritization."
+        ],
+        "areasForImprovement": [
+          "Server Component boundaries in Next.js/SSR."
+        ],
+        "recommendedTopics": [
+          "React 19 Actions",
+          "Compiler & Memoization Optimization"
+        ]
+      },
+      {
+        "assessmentId": "asmt-alex-ts-1",
+        "userId": "user-alex-dev",
+        "skill": "TypeScript",
+        "initialDifficulty": "Intermediate",
+        "finalDifficulty": "Intermediate",
+        "totalQuestions": 10,
+        "correctAnswers": 8,
+        "incorrectAnswers": 2,
+        "percentageScore": 80,
+        "proficiencyLevel": "Advanced",
+        "questionHistory": [],
+        "completedAt": "2026-10-26T18:01:29.468Z",
+        "durationSeconds": 360,
+        "aiGeneratedQuestionCount": 7,
+        "fallbackQuestionCount": 3,
+        "strengths": [
+          "Strong command of Generics, Union types, and Type narrowing."
+        ],
+        "areasForImprovement": [
+          "Complex mapped types with `infer` in conditional branches."
+        ],
+        "recommendedTopics": [
+          "Template literal types",
+          "Conditional type distribution"
+        ]
+      }
+    ]
+  },
+  "applications": {
+    "app-alex-nexus-1": {
+      "id": "app-alex-nexus-1",
+      "projectId": "proj-nexus-analytics",
+      "projectTitleSnapshot": "Nexus Real-Time Developer Analytics Dashboard",
+      "applicantId": "user-alex-dev",
+      "applicantNameSnapshot": "Alex Rivera",
+      "applicantEmailSnapshot": "alex.dev@example.com",
+      "applicantSkillsSnapshot": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "SQL",
+        "Git",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "coverLetter": "Hi Sarah! I have built several high-performance interactive dashboards with React and TypeScript. Having scored 90% in the React assessment and 80% in TypeScript, I am confident in handling sub-second rendering for telemetry visualizers.",
+      "relevantSkills": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS"
+      ],
+      "status": "Shortlisted",
+      "submittedAt": "2026-10-29T18:01:29.468Z",
+      "updatedAt": "2026-10-30T18:27:31.130Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "changedAt": "2026-10-29T18:01:29.468Z",
+          "changedBy": "Alex Rivera",
+          "note": "Application submitted via DevMatch portal"
+        },
+        {
+          "status": "Shortlisted",
+          "changedAt": "2026-10-30T06:01:29.468Z",
+          "changedBy": "Sarah Chen",
+          "note": "Impressive React assessment score and portfolio dashboard demos!"
+        },
+        {
+          "status": "Shortlisted",
+          "changedAt": "2026-10-30T18:15:09.159Z",
+          "changedBy": "Sarah Chen",
+          "note": "Verified candidate credentials"
+        },
+        {
+          "status": "Shortlisted",
+          "changedAt": "2026-10-30T18:16:47.563Z",
+          "changedBy": "Sarah Chen",
+          "note": "Verified candidate credentials"
+        },
+        {
+          "status": "Shortlisted",
+          "changedAt": "2026-10-30T18:27:31.130Z",
+          "changedBy": "Sarah Chen",
+          "note": "Verified candidate credentials"
+        }
+      ]
+    },
+    "app-1793383606610-3po3": {
+      "id": "app-1793383606610-3po3",
+      "projectId": "proj-hypercloud-api",
+      "projectTitleSnapshot": "HyperCloud Resilient API Gateway Engine",
+      "applicantId": "user-alex-dev",
+      "applicantNameSnapshot": "Alex Rivera",
+      "applicantEmailSnapshot": "alex.dev@example.com",
+      "applicantSkillsSnapshot": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "SQL",
+        "Git",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "coverLetter": "I have built production Express and TypeScript microservices and scored 80% on the TypeScript assessment. Looking forward to contributing to the gateway engine!",
+      "relevantSkills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "SQL",
+        "Git",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "status": "Pending",
+      "submittedAt": "2026-10-30T18:06:46.610Z",
+      "updatedAt": "2026-10-30T18:06:46.610Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "changedAt": "2026-10-30T18:06:46.610Z",
+          "changedBy": "Alex Rivera",
+          "note": "Application successfully submitted."
+        }
+      ]
+    },
+    "app-1793384009045-bw3z": {
+      "id": "app-1793384009045-bw3z",
+      "projectId": "proj-hypercloud-api",
+      "projectTitleSnapshot": "HyperCloud Resilient API Gateway Engine",
+      "applicantId": "user-sarah-lead",
+      "applicantNameSnapshot": "Sarah Chen",
+      "applicantEmailSnapshot": "sarah.recruiter@example.com",
+      "applicantSkillsSnapshot": [
+        "Architecture",
+        "TypeScript",
+        "Node.js",
+        "Kubernetes",
+        "System Design"
+      ],
+      "coverLetter": "Agree",
+      "relevantSkills": [
+        "Architecture",
+        "TypeScript",
+        "Node.js",
+        "Kubernetes",
+        "System Design"
+      ],
+      "status": "Withdrawn",
+      "submittedAt": "2026-10-30T18:13:29.045Z",
+      "updatedAt": "2026-10-30T18:13:40.737Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "changedAt": "2026-10-30T18:13:29.045Z",
+          "changedBy": "Sarah Chen",
+          "note": "Application successfully submitted."
+        },
+        {
+          "status": "Withdrawn",
+          "changedAt": "2026-10-30T18:13:40.737Z",
+          "changedBy": "Sarah Chen",
+          "note": "Withdrawn by applicant."
+        }
+      ]
+    },
+    "app-1793384109148-1ocm": {
+      "id": "app-1793384109148-1ocm",
+      "projectId": "proj-dataflow-pipeline",
+      "projectTitleSnapshot": "OmniData Distributed ETL & Stream Engine",
+      "applicantId": "user-1793384109144-maqw",
+      "applicantNameSnapshot": "Applicant Tester",
+      "applicantEmailSnapshot": "applicant.1793384109142@example.com",
+      "applicantSkillsSnapshot": [
+        "Python",
+        "SQL"
+      ],
+      "coverLetter": "First application for data pipeline",
+      "relevantSkills": [
+        "Python",
+        "SQL"
+      ],
+      "status": "Withdrawn",
+      "submittedAt": "2026-10-30T18:15:09.148Z",
+      "updatedAt": "2026-10-30T18:15:09.152Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "changedAt": "2026-10-30T18:15:09.148Z",
+          "changedBy": "Applicant Tester",
+          "note": "Application successfully submitted."
+        },
+        {
+          "status": "Withdrawn",
+          "changedAt": "2026-10-30T18:15:09.152Z",
+          "changedBy": "Applicant Tester",
+          "note": "Withdrawn by applicant."
+        }
+      ]
+    },
+    "app-1793384207557-f2vq": {
+      "id": "app-1793384207557-f2vq",
+      "projectId": "proj-dataflow-pipeline",
+      "projectTitleSnapshot": "OmniData Distributed ETL & Stream Engine",
+      "applicantId": "user-1793384207554-35fc",
+      "applicantNameSnapshot": "Applicant Tester",
+      "applicantEmailSnapshot": "applicant.1793384207553@example.com",
+      "applicantSkillsSnapshot": [
+        "Python",
+        "SQL"
+      ],
+      "coverLetter": "First application for data pipeline",
+      "relevantSkills": [
+        "Python",
+        "SQL"
+      ],
+      "status": "Withdrawn",
+      "submittedAt": "2026-10-30T18:16:47.557Z",
+      "updatedAt": "2026-10-30T18:16:47.560Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "changedAt": "2026-10-30T18:16:47.557Z",
+          "changedBy": "Applicant Tester",
+          "note": "Application successfully submitted."
+        },
+        {
+          "status": "Withdrawn",
+          "changedAt": "2026-10-30T18:16:47.560Z",
+          "changedBy": "Applicant Tester",
+          "note": "Withdrawn by applicant."
+        }
+      ]
+    },
+    "app-1793384851118-2p3n": {
+      "id": "app-1793384851118-2p3n",
+      "projectId": "proj-dataflow-pipeline",
+      "projectTitleSnapshot": "OmniData Distributed ETL & Stream Engine",
+      "applicantId": "user-1793384851114-vl8e",
+      "applicantNameSnapshot": "Applicant Tester",
+      "applicantEmailSnapshot": "applicant.1793384851112@example.com",
+      "applicantSkillsSnapshot": [
+        "Python",
+        "SQL"
+      ],
+      "coverLetter": "First application for data pipeline",
+      "relevantSkills": [
+        "Python",
+        "SQL"
+      ],
+      "status": "Withdrawn",
+      "submittedAt": "2026-10-30T18:27:31.118Z",
+      "updatedAt": "2026-10-30T18:27:31.123Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "changedAt": "2026-10-30T18:27:31.118Z",
+          "changedBy": "Applicant Tester",
+          "note": "Application successfully submitted."
+        },
+        {
+          "status": "Withdrawn",
+          "changedAt": "2026-10-30T18:27:31.123Z",
+          "changedBy": "Applicant Tester",
+          "note": "Withdrawn by applicant."
+        }
+      ]
+    }
+  },
+  "bookmarks": {
+    "bm-user-alex-dev-proj-hypercloud-api": {
+      "id": "bm-user-alex-dev-proj-hypercloud-api",
+      "userId": "user-alex-dev",
+      "projectId": "proj-hypercloud-api",
+      "createdAt": "2026-10-30T18:01:29.468Z"
+    }
+  },
+  "activeSessions": {
+    "asmt-1793383417435-d2sh": {
+      "assessmentId": "asmt-1793383417435-d2sh",
+      "userId": "user-alex-dev",
+      "skill": "React",
+      "initialDifficulty": "Intermediate",
+      "currentDifficulty": "Intermediate",
+      "totalQuestions": 10,
+      "currentQuestionIndex": 1,
+      "questions": [
+        {
+          "id": "react-int-1",
+          "skill": "React",
+          "difficulty": "Intermediate",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "isAiGenerated": false
+        },
+        {
+          "id": "react-beg-1",
+          "skill": "React",
+          "difficulty": "Beginner",
+          "question": "Which React hook is primarily used to retain state between renders in a functional component?",
+          "options": [
+            "useState",
+            "useEffect",
+            "useMemo",
+            "useContext"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "useState declares a state variable and returns a pair with current state and a function to update it.",
+          "isAiGenerated": false
+        }
+      ],
+      "answers": [
+        {
+          "questionId": "react-int-1",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "difficulty": "Intermediate",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "selectedOptionIndex": 0,
+          "correctOptionIndex": 0,
+          "isCorrect": true,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "timeSpentSeconds": 15
+        }
+      ],
+      "startedAt": 1793383417770,
+      "aiGeneratedCount": 0,
+      "fallbackCount": 2
+    },
+    "asmt-1793384108508-mswt": {
+      "assessmentId": "asmt-1793384108508-mswt",
+      "userId": "user-alex-dev",
+      "skill": "React",
+      "initialDifficulty": "Intermediate",
+      "currentDifficulty": "Intermediate",
+      "totalQuestions": 5,
+      "currentQuestionIndex": 1,
+      "questions": [
+        {
+          "id": "react-int-1",
+          "skill": "React",
+          "difficulty": "Intermediate",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "isAiGenerated": false
+        },
+        {
+          "id": "react-beg-1",
+          "skill": "React",
+          "difficulty": "Beginner",
+          "question": "Which React hook is primarily used to retain state between renders in a functional component?",
+          "options": [
+            "useState",
+            "useEffect",
+            "useMemo",
+            "useContext"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "useState declares a state variable and returns a pair with current state and a function to update it.",
+          "isAiGenerated": false
+        }
+      ],
+      "answers": [
+        {
+          "questionId": "react-int-1",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "difficulty": "Intermediate",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "selectedOptionIndex": 0,
+          "correctOptionIndex": 0,
+          "isCorrect": true,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "timeSpentSeconds": 15
+        }
+      ],
+      "startedAt": 1793384108846,
+      "aiGeneratedCount": 0,
+      "fallbackCount": 2
+    },
+    "asmt-1793384206910-dwwu": {
+      "assessmentId": "asmt-1793384206910-dwwu",
+      "userId": "user-alex-dev",
+      "skill": "React",
+      "initialDifficulty": "Intermediate",
+      "currentDifficulty": "Intermediate",
+      "totalQuestions": 5,
+      "currentQuestionIndex": 1,
+      "questions": [
+        {
+          "id": "react-int-1",
+          "skill": "React",
+          "difficulty": "Intermediate",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "isAiGenerated": false
+        },
+        {
+          "id": "react-beg-1",
+          "skill": "React",
+          "difficulty": "Beginner",
+          "question": "Which React hook is primarily used to retain state between renders in a functional component?",
+          "options": [
+            "useState",
+            "useEffect",
+            "useMemo",
+            "useContext"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "useState declares a state variable and returns a pair with current state and a function to update it.",
+          "isAiGenerated": false
+        }
+      ],
+      "answers": [
+        {
+          "questionId": "react-int-1",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "difficulty": "Intermediate",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "selectedOptionIndex": 0,
+          "correctOptionIndex": 0,
+          "isCorrect": true,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "timeSpentSeconds": 15
+        }
+      ],
+      "startedAt": 1793384207234,
+      "aiGeneratedCount": 0,
+      "fallbackCount": 2
+    },
+    "asmt-1793384850395-zpx0": {
+      "assessmentId": "asmt-1793384850395-zpx0",
+      "userId": "user-alex-dev",
+      "skill": "React",
+      "initialDifficulty": "Intermediate",
+      "currentDifficulty": "Intermediate",
+      "totalQuestions": 5,
+      "currentQuestionIndex": 1,
+      "questions": [
+        {
+          "id": "react-int-1",
+          "skill": "React",
+          "difficulty": "Intermediate",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "isAiGenerated": false
+        },
+        {
+          "id": "react-beg-1",
+          "skill": "React",
+          "difficulty": "Beginner",
+          "question": "Which React hook is primarily used to retain state between renders in a functional component?",
+          "options": [
+            "useState",
+            "useEffect",
+            "useMemo",
+            "useContext"
+          ],
+          "correctOptionIndex": 0,
+          "explanation": "useState declares a state variable and returns a pair with current state and a function to update it.",
+          "isAiGenerated": false
+        }
+      ],
+      "answers": [
+        {
+          "questionId": "react-int-1",
+          "question": "When should you pass an empty dependency array `[]` to `useEffect`?",
+          "difficulty": "Intermediate",
+          "options": [
+            "When you want the effect to run only once after the component mounts",
+            "When the effect must run on every single state change",
+            "To prevent the component from unmounting",
+            "When returning JSX from an async function"
+          ],
+          "selectedOptionIndex": 0,
+          "correctOptionIndex": 0,
+          "isCorrect": true,
+          "explanation": "An empty dependency array indicates that the effect does not depend on any changing values, so it executes once on mount and cleans up on unmount.",
+          "timeSpentSeconds": 15
+        }
+      ],
+      "startedAt": 1793384850710,
+      "aiGeneratedCount": 0,
+      "fallbackCount": 2
+    }
+  }
+}

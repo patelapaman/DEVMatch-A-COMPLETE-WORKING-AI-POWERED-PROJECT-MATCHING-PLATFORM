@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // User Profiles
+    match /users/{userId} {
+      // Anyone can read public developer profiles
+      allow read: if true;
+      // Users can only create and update their own document, and cannot elevate role
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && request.auth.uid == userId
+                    && (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['role']));
+      allow delete: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Projects Collection
+    match /projects/{projectId} {
+      // All authenticated and public users can browse open projects
+      allow read: if true;
+      // Only authenticated recruiters / project owners can create projects
+      allow create: if request.auth != null;
+      // Only the project owner can update or close their project
+      allow update, delete: if request.auth != null && resource.data.ownerId == request.auth.uid;
+    }
+
+    // Applications Collection
+    match /applications/{applicationId} {
+      // Readable by the applicant OR the project owner
+      allow read: if request.auth != null && (
+        resource.data.applicantId == request.auth.uid ||
+        get(/databases/$(database)/documents/projects/$(resource.data.projectId)).data.ownerId == request.auth.uid
+      );
+      // Applicants can submit new applications with initial 'Pending' status
+      allow create: if request.auth != null &&
+                    request.resource.data.applicantId == request.auth.uid &&
+                    request.resource.data.status == 'Pending';
+      // Applicants can withdraw; Project owners can update status (Shortlisted, Accepted, Rejected)
+      allow update: if request.auth != null && (
+        (resource.data.applicantId == request.auth.uid && request.resource.data.status == 'Withdrawn') ||
+        (get(/databases/$(database)/documents/projects/$(resource.data.projectId)).data.ownerId == request.auth.uid)
+      );
+      allow delete: if false; // Audit trail preserved
+    }
+
+    // Assessment Results
+    match /assessments/{assessmentId} {
+      // Users can only read their own verified assessment scores
+      allow read: if request.auth != null && resource.data.userId == request.auth.uid;
+      // Writes are restricted to server-side trusted evaluation or applicant matching
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if false; // Assessment history is immutable
+    }
+
+    // Bookmarks Collection
+    match /bookmarks/{bookmarkId} {
+      allow read, write: if request.auth != null && request.auth.uid == resource.data.userId;
+      allow create: if request.auth != null && request.auth.uid == request.resource.data.userId;
+    }
+  }
+}

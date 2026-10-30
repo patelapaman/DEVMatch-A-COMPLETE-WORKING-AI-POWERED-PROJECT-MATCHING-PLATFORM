@@ -1,0 +1,1134 @@
+# MASTER PROMPT: BUILD DEVMatch — A COMPLETE, WORKING AI-POWERED PROJECT MATCHING PLATFORM
+
+Act as a senior full-stack software architect, senior React developer, Node.js backend engineer, database engineer, AI engineer, UI/UX designer, security engineer, and QA automation engineer.
+
+Your task is to BUILD, IMPLEMENT, RUN, TEST, DEBUG, AND VERIFY a complete full-stack web application named **DevMatch**.
+
+Do not merely provide instructions, mockups, sample code, or a static UI. Build the actual application in the current Google AI Studio project workspace.
+
+The application must be functional, responsive, secure, persistent, and ready for deployment after all required configuration and verification.
+
+Do not stop after creating the homepage. Implement every major feature, connect the frontend to the backend and database, and test all critical user flows.
+
+==================================================
+1. PROJECT OVERVIEW
+==================================================
+
+Project name: DevMatch
+
+Tagline: Discover Projects. Prove Your Skills. Find Your Match.
+
+Purpose:
+DevMatch is an AI-powered platform that helps students, developers, and job seekers discover projects matching their technical skills, assess their abilities through adaptive quizzes, receive personalized project recommendations, and track their applications.
+
+Target users:
+- Students
+- Beginner developers
+- Intermediate developers
+- Experienced developers
+- Project owners and recruiters
+
+Build a professional, modern, production-oriented web application.
+
+IMPORTANT:
+Use the current Google AI Studio full-stack web application environment.
+
+Preferred architecture:
+- Frontend: React + TypeScript + Vite, if supported by the workspace
+- Styling: Tailwind CSS, if supported
+- Backend: Node.js server-side runtime with TypeScript where supported
+- Database: Firebase Cloud Firestore
+- Authentication: Firebase Authentication
+- AI: Gemini API called exclusively from server-side code
+- Testing: Appropriate unit, integration, and end-to-end tests
+- Deployment: Google AI Studio supported deployment workflow
+
+Use the platform's native full-stack architecture rather than introducing unnecessary separate servers.
+
+Do NOT create a separate Python AI microservice.
+Do NOT require the user to run a separate FastAPI server.
+Do NOT introduce MongoDB unless the current project already requires it and there is a compelling reason to preserve it.
+
+Prefer Firebase Authentication and Firestore so the application can run with managed cloud services.
+
+Use stable, mutually compatible package versions. Avoid unnecessary dependencies.
+
+==================================================
+2. NON-NEGOTIABLE DEVELOPMENT RULES
+==================================================
+
+1. Build a real application, not a frontend-only demonstration.
+2. Every visible button, link, form, filter, and navigation item must work.
+3. Every important feature must have real application logic.
+4. Store persistent user data in Firestore.
+5. Use Firebase Authentication for real user authentication.
+6. Use server-side authorization and validation for sensitive operations.
+7. Never expose API keys, service account credentials, private tokens, or secrets in browser code.
+8. Call Gemini through the server-side runtime using the platform's secure GEMINI_API_KEY secret.
+9. Never hardcode fake API responses as if they were live results.
+10. Never claim an operation succeeded if it failed.
+11. Do not silently swallow errors.
+12. Display useful loading, success, empty, and error states.
+13. Do not leave TODO comments or placeholder implementations for required features.
+14. Do not generate duplicate or conflicting backend implementations.
+15. Do not overwrite working functionality unnecessarily.
+16. Do not create a separate API architecture when the platform already provides the required server runtime.
+17. Use environment configuration and secure secret management.
+18. Do not ask the user to manually paste hundreds of lines of code into separate files.
+19. Use the AI Studio coding agent to create and modify project files directly.
+20. Never declare the application fully tested unless the corresponding tests actually pass.
+
+If a required external integration is unavailable, implement the appropriate error state, document the exact configuration needed, and never falsely claim that the integration is working.
+
+==================================================
+3. APPLICATION DESIGN AND BRANDING
+==================================================
+
+Create a polished, premium developer-platform interface.
+
+Design direction:
+- Modern SaaS dashboard
+- Clean typography
+- Professional indigo, blue, and violet accents
+- Light theme by default
+- Optional dark mode
+- White or subtle neutral backgrounds
+- Rounded cards
+- Subtle shadows
+- Clear visual hierarchy
+- Consistent spacing
+- Responsive navigation
+- Smooth, restrained transitions
+- Accessible forms and controls
+- Professional icons
+- Attractive empty states
+
+Avoid:
+- Excessive gradients
+- Overcrowded dashboards
+- Unnecessary animations
+- Fake charts
+- Fake statistics
+- Broken image links
+- Excessive placeholder text
+- Nonfunctional decorative buttons
+
+Use a consistent component system.
+
+Create reusable components for:
+- Buttons
+- Inputs
+- Select menus
+- Modal dialogs
+- Toast notifications
+- Loading indicators
+- Error boundaries
+- Project cards
+- Skill badges
+- Progress bars
+- Status badges
+- Pagination
+- Confirmation dialogs
+- Empty states
+
+Ensure accessibility with semantic HTML, keyboard navigation, visible focus states, and appropriate labels.
+
+==================================================
+4. REQUIRED PAGES AND NAVIGATION
+==================================================
+
+Implement the following pages:
+
+A. Landing Page
+B. Sign Up
+C. Login
+D. Forgot Password
+E. User Dashboard
+F. My Profile
+G. Skill Assessment
+H. Quiz Results
+I. Browse Projects
+J. Project Details
+K. Recommended Matches
+L. My Applications
+M. Application Details
+N. Settings
+O. Not Found / 404
+
+If a project owner or recruiter role is implemented, also provide:
+P. Recruiter Dashboard
+Q. Create/Edit Project
+R. Manage Applications
+
+Use protected routes where authentication is required.
+
+Unauthenticated visitors should be able to see the landing page and public project listings.
+
+Redirect unauthorized users to an appropriate page without losing the intended destination.
+
+Implement a responsive sidebar or navigation bar with clear active states.
+
+==================================================
+5. LANDING PAGE
+==================================================
+
+Create an attractive landing page with:
+
+- DevMatch logo and brand name
+- Hero heading: "Find Projects That Match Your Skills"
+- Supporting description
+- Get Started button
+- Explore Projects button
+- How It Works section
+- Skill Assessment feature
+- AI Matching feature
+- Application Tracking feature
+- Featured project cards backed by actual project data
+- Benefits section
+- FAQ section
+- Footer with navigation and contact links
+
+Buttons must navigate to real pages.
+
+Do not display fabricated user counts, placement statistics, testimonials, or success percentages as factual data.
+
+==================================================
+6. AUTHENTICATION AND USER MANAGEMENT
+==================================================
+
+Implement Firebase Authentication.
+
+Required features:
+- Email/password registration
+- Email/password login
+- Logout
+- Password reset
+- Authentication persistence
+- User-friendly authentication errors
+- Protected application pages
+- User profile creation
+- Profile editing
+- Role-aware access control
+
+If Google sign-in is implemented, configure it correctly and explain any required provider settings.
+
+After successful registration, create the user's profile in Firestore.
+
+Profile fields:
+- uid
+- name
+- email
+- profileImageUrl
+- bio
+- location
+- education
+- experienceLevel
+- skills
+- preferredTechnologies
+- interests
+- portfolioUrl
+- githubUrl
+- linkedinUrl
+- createdAt
+- updatedAt
+
+Allow users to add, edit, and remove skills.
+
+Validate URLs and user inputs.
+
+Never store plaintext passwords.
+
+Never trust a user-provided role or UID without server-side authorization.
+
+Ordinary users must not be able to promote themselves to administrators or recruiters.
+
+==================================================
+7. USER DASHBOARD
+==================================================
+
+Create a personalized dashboard with real data from Firestore.
+
+Display:
+- Welcome message
+- Profile completion
+- Total completed assessments
+- Skills assessed
+- Projects recommended
+- Applications submitted
+- Applications by status
+- Recently viewed projects
+- Recommended projects
+- Recent application activity
+- Suggested next actions
+
+Every count must be calculated from actual persisted data.
+
+Do not use hardcoded dashboard statistics.
+
+If a user has no activity, show useful onboarding guidance and empty states.
+
+==================================================
+8. AI ADAPTIVE SKILL ASSESSMENT
+==================================================
+
+Implement a fully functional AI-assisted skill assessment system.
+
+Supported skill examples:
+- JavaScript
+- TypeScript
+- React
+- Node.js
+- Python
+- Java
+- C++
+- SQL
+- MongoDB
+- Firebase
+- HTML
+- CSS
+- Data Structures and Algorithms
+- Git
+- REST APIs
+
+Allow users to select a skill and begin an assessment.
+
+Assessment configuration:
+- Skill
+- Difficulty
+- Number of questions
+- Assessment start time
+- Assessment completion time
+
+Default question count: 10.
+
+Difficulty levels:
+- Beginner
+- Intermediate
+- Advanced
+
+Adaptive difficulty rules:
+
+1. Start at the selected initial difficulty.
+2. After each answer, update the next question difficulty based on recent correctness and performance.
+3. Increase difficulty when the user demonstrates consistent correctness.
+4. Decrease difficulty when the user repeatedly answers incorrectly.
+5. Avoid changing difficulty unpredictably after a single answer.
+6. Keep difficulty within the allowed levels.
+7. Record the difficulty of every question.
+
+Question requirements:
+- Generate relevant technical questions with Gemini.
+- Use multiple-choice questions for the initial implementation.
+- Each question must have four answer options.
+- Exactly one option must be correct.
+- Include a concise explanation for the correct answer.
+- Avoid duplicate questions within an assessment.
+- Avoid ambiguous questions.
+- Validate generated question structures on the server.
+- Retry invalid generation responses safely.
+- Use a validated fallback question bank if Gemini is temporarily unavailable.
+- Clearly identify fallback usage in internal assessment metadata.
+
+SECURITY REQUIREMENT:
+
+Never send the correct answer or answer explanation to the browser before the user submits the question.
+
+The server must evaluate the submitted answer.
+
+Store answer keys securely on the server during an assessment, or in a protected server-controlled document.
+
+Never allow the client to submit an arbitrary score as the final result.
+
+The server must calculate the score from the submitted answers.
+
+Assessment flow:
+1. User selects a skill.
+2. Server creates the assessment.
+3. Server returns the first question without its answer key.
+4. User submits an answer.
+5. Server validates and evaluates the answer.
+6. Server updates adaptive difficulty.
+7. Server returns feedback and the next question.
+8. The process continues until completion.
+9. Server calculates the final score.
+10. Save the result in Firestore.
+11. Show the results page.
+
+Show feedback after each answer without revealing future answer keys.
+
+Assessment result fields:
+- assessmentId
+- userId
+- skill
+- initialDifficulty
+- finalDifficulty
+- totalQuestions
+- correctAnswers
+- incorrectAnswers
+- percentageScore
+- questionHistory
+- completedAt
+- durationSeconds
+- aiGeneratedQuestionCount
+- fallbackQuestionCount
+
+Results page:
+- Score out of 100
+- Correct and incorrect answers
+- Skill proficiency estimate
+- Difficulty progression
+- Strengths
+- Areas for improvement
+- Recommended learning topics
+- Retake Assessment button
+- View Recommended Projects button
+
+Explain that the proficiency estimate is an application-generated estimate, not a formal certification.
+
+==================================================
+9. BROWSE PROJECTS
+==================================================
+
+Build a real project discovery page backed by Firestore.
+
+Each project must contain:
+- id
+- title
+- slug
+- description
+- shortDescription
+- requiredSkills
+- optionalSkills
+- experienceLevel
+- category
+- technologies
+- projectType
+- location
+- remoteAllowed
+- duration
+- numberOfOpenings
+- ownerId
+- ownerName
+- status
+- applicationDeadline
+- createdAt
+- updatedAt
+
+Project type examples:
+- Internship
+- Full-time
+- Part-time
+- Freelance
+- Open-source
+- Student Project
+
+Features:
+- Search by project title and keywords
+- Filter by skills
+- Filter by category
+- Filter by experience level
+- Filter by project type
+- Filter by remote availability
+- Sort by newest
+- Sort by relevance
+- Pagination or incremental loading
+- Project detail page
+- Required and optional skill badges
+- Apply button
+- Save/bookmark project
+- Loading, empty, and error states
+
+Filters must operate on real data, not just change the visual appearance.
+
+Implement server-side filtering or appropriate Firestore queries where necessary.
+
+Create a small set of clearly identified sample projects during development if needed. Do not present them as verified external job vacancies.
+
+Prevent applications to closed or expired projects.
+
+==================================================
+10. PROJECT DETAILS AND APPLICATION SUBMISSION
+==================================================
+
+The project detail page must show:
+- Title
+- Full description
+- Required skills
+- Optional skills
+- Technologies
+- Experience level
+- Project type
+- Location or remote status
+- Duration
+- Number of openings
+- Application deadline
+- Project owner information
+- Apply button
+- Save project button
+
+Application workflow:
+1. Authenticated user opens a project.
+2. User clicks Apply.
+3. Application form appears.
+4. User adds a cover letter and any required information.
+5. Server validates the application.
+6. Server verifies the project is open.
+7. Server checks for an existing application.
+8. Server creates the application record.
+9. User receives a success notification.
+10. Application appears in My Applications.
+
+Prevent duplicate applications to the same project by the same user.
+
+Application fields:
+- id
+- projectId
+- projectTitleSnapshot
+- applicantId
+- applicantNameSnapshot
+- applicantEmailSnapshot
+- coverLetter
+- relevantSkills
+- status
+- submittedAt
+- updatedAt
+- statusHistory
+
+Allowed application statuses:
+- Pending
+- Shortlisted
+- Accepted
+- Rejected
+- Withdrawn
+
+Users may view and withdraw their own eligible applications.
+
+Users must not be allowed to change their application status directly to Accepted or Shortlisted.
+
+Status changes must be performed by an authorized project owner or administrator.
+
+Use appropriate server-side permissions and Firestore security rules.
+
+==================================================
+11. RECOMMENDED MATCHES ENGINE
+==================================================
+
+Build a personalized project recommendation engine.
+
+Use:
+- Skills from the user's profile
+- Skill assessment results
+- Project required skills
+- Project optional skills
+- Experience level
+- Preferred technologies
+- User interests
+
+Create a deterministic, explainable baseline scoring algorithm.
+
+Suggested scoring model:
+- Required skill coverage: 50 points
+- Optional skill coverage: 15 points
+- Assessment evidence: 20 points
+- Experience compatibility: 10 points
+- Preferred technology or interest overlap: 5 points
+
+Normalize the score to 0–100.
+
+If assessment evidence is missing, do not invent an assessment score. Reweight or omit that component and clearly identify the reduced confidence.
+
+A recommendation must explain:
+- Matching skills
+- Missing required skills
+- Matching optional skills
+- Relevant assessment results
+- Experience compatibility
+- Why the project was recommended
+
+Rules:
+- Never claim a skill was assessed when it was not.
+- Never claim the user has a skill solely because a project requires it.
+- Do not use Gemini to invent matching evidence.
+- Gemini may generate a readable explanation based only on verified scoring inputs.
+- Use deterministic code for the actual match score.
+- Show a clear score label such as "78% Match".
+- Show an empty state if no projects match.
+- Allow the user to open project details and apply.
+
+Keep the scoring formula documented and configurable.
+
+==================================================
+12. MY APPLICATIONS
+==================================================
+
+Build a complete application tracking page.
+
+Display:
+- All applications
+- Project title
+- Application submission date
+- Current status
+- Last status update
+- View Project button
+- View Application button
+- Withdraw button when eligible
+
+Filters:
+- All
+- Pending
+- Shortlisted
+- Accepted
+- Rejected
+- Withdrawn
+
+Sort by most recent.
+
+Show summary counts calculated from the current user's actual applications.
+
+When a recruiter or authorized project owner changes an application status:
+- Persist the change.
+- Record the previous and new status.
+- Record the timestamp.
+- Record the authorized actor.
+- Update the applicant's view.
+- Display a notification when the application page is next refreshed or the data is updated.
+
+Do not fabricate real-time notifications if they are not implemented.
+
+==================================================
+13. RECRUITER AND PROJECT OWNER FEATURES
+==================================================
+
+Implement a project owner workflow if supported by the current application scope.
+
+Authorized project owners can:
+- Create projects
+- Edit their own projects
+- Close projects
+- View applications to their projects
+- Review applicant profiles
+- Review relevant assessment evidence when permitted
+- Shortlist applicants
+- Accept applicants
+- Reject applicants
+
+Only the project owner or an authorized administrator may update a project's applications.
+
+Prevent users from editing projects owned by other users.
+
+Validate all inputs on the server.
+
+Maintain status history for application changes.
+
+If role-based project management is implemented, use a secure role assignment workflow. Never grant recruiter or administrator privileges from an untrusted client-side form.
+
+==================================================
+14. PROFILE AND SKILL MANAGEMENT
+==================================================
+
+Allow users to:
+- Edit their profile
+- Add and remove skills
+- Add education
+- Add experience level
+- Add portfolio links
+- Add GitHub and LinkedIn URLs
+- View assessment history
+- View skill proficiency estimates
+- Retake assessments
+
+Profile updates must persist in Firestore.
+
+Use profile skills and verified assessment history as separate sources of evidence.
+
+Do not overwrite an explicitly provided skill list with inferred assessment data.
+
+==================================================
+15. DATABASE DESIGN
+==================================================
+
+Use Firestore collections with a documented schema.
+
+Suggested collections:
+- users
+- projects
+- assessments
+- applications
+- bookmarks
+- activityLogs
+
+Design the data model carefully.
+
+Requirements:
+- Use server timestamps where appropriate.
+- Use document IDs consistently.
+- Validate relationships between users, projects, assessments, and applications.
+- Avoid unnecessary duplicate writes.
+- Use atomic operations or transactions where needed.
+- Prevent duplicate applications.
+- Create appropriate Firestore indexes.
+- Add pagination for large collections.
+- Avoid unrestricted full-collection reads.
+- Avoid unbounded data retrieval.
+- Never expose assessment answer keys to unauthorized clients.
+
+Use Firestore Security Rules with least-privilege access.
+
+Security rules must ensure:
+- Users can read and edit only their own private profile fields.
+- Public project information is readable according to project visibility.
+- Users cannot read another user's private application details.
+- Users cannot assign themselves privileged roles.
+- Application status changes are restricted to authorized actors.
+- Assessment answer keys and private assessment state are not publicly readable.
+- Server-only operations cannot be bypassed through direct client writes.
+
+Do not rely on frontend checks as the only security layer.
+
+Document any operations that must use trusted server-side code.
+
+==================================================
+16. BACKEND API AND BUSINESS LOGIC
+==================================================
+
+Implement a clean server-side service layer.
+
+Use the existing Google AI Studio server runtime.
+
+Create typed request and response schemas where supported.
+
+Required logical operations:
+- Register or initialize user profile
+- Get current user profile
+- Update user profile
+- List projects
+- Search and filter projects
+- Get project details
+- Create project
+- Update project
+- Close project
+- Start assessment
+- Submit assessment answer
+- Get assessment results
+- List assessment history
+- Get project recommendations
+- Create application
+- List current user's applications
+- Get application details
+- Withdraw application
+- Update application status
+- Create and remove bookmarks
+
+For each operation:
+- Validate input.
+- Verify identity.
+- Verify authorization.
+- Perform the business logic.
+- Handle expected errors.
+- Return a consistent response.
+- Avoid exposing internal stack traces to users.
+
+Use appropriate HTTP status codes when using HTTP endpoints.
+
+Do not implement authentication using a locally stored fake user or hardcoded credentials.
+
+Do not place privileged Firebase operations in untrusted browser code.
+
+==================================================
+17. GEMINI INTEGRATION
+==================================================
+
+Integrate Gemini using the supported Google AI SDK for the current server runtime.
+
+Use the secure server-side GEMINI_API_KEY provided by Google AI Studio.
+
+Do not expose the key in:
+- Client-side JavaScript
+- Vite public environment variables
+- HTML
+- Browser network responses
+- GitHub commits
+- Logs
+
+Prefer the current supported Gemini API and SDK documented for Google AI Studio.
+
+Do not assume an outdated model identifier is available.
+
+Use a currently available model compatible with the implemented API. Keep the model identifier configurable.
+
+Use structured JSON output or equivalent schema-constrained output when supported.
+
+Validate all model responses before using them.
+
+For quiz generation:
+- Require valid question objects.
+- Require four options.
+- Require one correct answer.
+- Reject invalid or duplicate questions.
+- Limit prompt and response sizes.
+- Add request timeouts.
+- Handle quota and rate-limit errors.
+- Handle unavailable models and temporary service failures.
+- Avoid infinite retry loops.
+- Use validated fallback questions when appropriate.
+
+For recommendation explanations:
+- Provide only verified profile, assessment, and project data.
+- Treat user-generated text as untrusted content.
+- Do not allow user text to override system rules or server instructions.
+- Do not allow generated text to modify scores or authorization decisions.
+
+The application must remain usable if Gemini is temporarily unavailable.
+
+If AI is unavailable:
+- Display a clear message.
+- Use a validated question bank where appropriate.
+- Preserve saved data.
+- Allow non-AI features to continue working.
+- Never pretend an AI-generated response came from Gemini when a fallback was used.
+
+==================================================
+18. SECURITY AND PRIVACY
+==================================================
+
+Implement:
+- Server-side authentication verification
+- Authorization checks for every protected operation
+- Firebase Security Rules
+- Server-side input validation
+- Output escaping where required
+- Secure secret handling
+- Reasonable request size limits
+- Rate limiting for expensive AI operations where feasible
+- Protection against duplicate submissions
+- Safe error handling
+- No hardcoded admin credentials
+- No exposed private keys
+- No client-controlled final assessment scores
+- No client-controlled privileged application statuses
+
+Minimize the collection of personal information.
+
+Do not expose email addresses or private profile details to unrelated users.
+
+Do not log passwords, API keys, tokens, or full sensitive request bodies.
+
+Document the remaining security configuration required before public deployment.
+
+==================================================
+19. USER EXPERIENCE AND ERROR HANDLING
+==================================================
+
+Every page must have appropriate states:
+- Loading
+- Success
+- Empty
+- Error
+- Unauthorized
+- Offline or temporary network failure where appropriate
+
+Add:
+- Form validation
+- Helpful error messages
+- Confirmation dialogs for destructive actions
+- Disabled buttons during submission
+- Protection against accidental duplicate submissions
+- Toast notifications
+- Skeleton loaders when useful
+- Responsive layouts for mobile, tablet, and desktop
+
+Ensure:
+- No horizontal overflow on mobile.
+- Forms remain usable on small screens.
+- Text remains readable.
+- Buttons have clear labels.
+- Navigation works with keyboard and mouse.
+- Direct navigation to a valid route works.
+- Unknown routes show a useful 404 page.
+
+==================================================
+20. SAMPLE DATA AND FIRST-RUN EXPERIENCE
+==================================================
+
+Create a polished onboarding flow for new users.
+
+If the database contains no projects, offer an authorized development-only seed operation to insert a small set of sample projects.
+
+Sample project categories may include:
+- Frontend Development
+- Backend Development
+- Full-Stack Development
+- AI and Machine Learning
+- Data Analytics
+- Mobile Development
+
+Clearly identify seed data as demonstration content.
+
+Never seed fake real-world companies, fabricated recruiter endorsements, or false job offers.
+
+Do not seed the same records repeatedly.
+
+Seed operations must be restricted to an authorized development or administrator context.
+
+A new user should be able to:
+1. Sign up.
+2. Complete their profile.
+3. Add skills.
+4. Take an assessment.
+5. View results.
+6. Browse projects.
+7. View recommendations.
+8. Apply to a project.
+9. See the application in My Applications.
+10. Continue using the application after signing out and signing in again.
+
+==================================================
+21. TESTING REQUIREMENTS
+==================================================
+
+Write and run tests for critical business logic.
+
+Unit tests:
+- Match score calculation
+- Skill overlap calculation
+- Missing required skill calculation
+- Adaptive difficulty changes
+- Assessment scoring
+- Input validation
+- Application status transitions
+- Duplicate application prevention
+
+Integration tests:
+- Authentication-protected operations
+- Project listing and filtering
+- Assessment creation and submission
+- Final score calculation
+- Application creation
+- Application retrieval
+- Application status updates
+- User ownership checks
+
+End-to-end tests, where supported:
+- Sign up or sign in
+- Complete profile
+- Start an assessment
+- Submit answers
+- View results
+- Browse projects
+- Apply to a project
+- Verify application history
+- Sign out and sign back in
+- Confirm persisted records remain available
+
+Security tests:
+- Unauthorized profile access
+- Unauthorized application access
+- Unauthorized project editing
+- Privileged role escalation attempts
+- Attempts to submit a fake assessment score
+- Attempts to reveal assessment answer keys
+- Attempts to change application status without permission
+
+Build checks:
+- Install or resolve required dependencies.
+- Run type checking.
+- Run linting if configured.
+- Run unit tests.
+- Run integration tests where the environment supports them.
+- Run the production build.
+- Resolve all build errors.
+- Resolve runtime errors that can be reproduced.
+- Verify all required routes and features.
+
+Do not claim a test passed unless it was executed successfully.
+
+If Firebase credentials, external services, or a browser automation environment are unavailable, state precisely which tests could not be run.
+
+==================================================
+22. REQUIRED PROJECT DOCUMENTATION
+==================================================
+
+Create:
+- README.md
+- Architecture overview
+- Database schema documentation
+- Environment variable documentation
+- Setup guide
+- Local development guide
+- Firebase configuration guide
+- Gemini configuration guide
+- Testing guide
+- Deployment guide
+- Troubleshooting guide
+
+The README must explain:
+- What the application does
+- The technology stack
+- How authentication works
+- How data is stored
+- How Gemini is used
+- How to configure secrets
+- How to run the application
+- How to run tests
+- How to deploy
+- Known limitations
+
+Provide exact commands appropriate for the generated project.
+
+Do not provide commands for files, scripts, or package managers that do not exist in the project.
+
+==================================================
+23. DEPLOYMENT REQUIREMENTS
+==================================================
+
+Prepare the application for Google AI Studio's supported deployment workflow.
+
+Verify:
+- Frontend and backend are compatible with the deployment runtime.
+- API routes are correctly configured.
+- Secrets remain server-side.
+- Firebase authentication configuration is correct.
+- Firestore Security Rules are documented and deployable.
+- No required localhost URLs remain in production configuration.
+- Direct route navigation works.
+- Errors are handled safely.
+- The production build succeeds.
+
+Use Google AI Studio's available Publish workflow when supported.
+
+Do not automatically assume Firebase, Gemini, or Cloud Run is fully configured.
+
+Clearly identify any action that requires user approval, Firebase project selection, authentication provider setup, secrets configuration, billing, or deployment permissions.
+
+Never claim the application has been published unless deployment actually succeeds and a live URL is returned.
+
+==================================================
+24. IMPLEMENTATION WORKFLOW
+==================================================
+
+Work through the following phases in order.
+
+PHASE 1 — INSPECT AND PLAN
+- Inspect the current workspace.
+- Determine the existing framework and file structure.
+- Identify whether a usable project already exists.
+- Reuse working code where appropriate.
+- Write a short implementation plan.
+- Identify required platform integrations.
+
+PHASE 2 — APPLICATION FOUNDATION
+- Configure the application architecture.
+- Set up routing.
+- Set up the design system.
+- Configure server-side runtime.
+- Configure Firebase integration.
+- Configure secure Gemini access.
+
+PHASE 3 — AUTHENTICATION AND DATA
+- Implement authentication.
+- Implement user profiles.
+- Create database access functions.
+- Create security rules.
+- Implement validation and authorization.
+
+PHASE 4 — CORE FEATURES
+- Build the dashboard.
+- Build project discovery.
+- Build project details.
+- Build profile and skill management.
+- Build the adaptive assessment system.
+- Build recommendation scoring.
+- Build application submission and tracking.
+
+PHASE 5 — AI AND ERROR HANDLING
+- Integrate Gemini.
+- Validate generated output.
+- Implement fallback behavior.
+- Add rate-limit and error handling.
+
+PHASE 6 — TESTING
+- Run type checks.
+- Run tests.
+- Run the production build.
+- Fix actual errors.
+- Verify key application workflows.
+- Re-run tests after fixing issues.
+
+PHASE 7 — DOCUMENTATION AND DELIVERY
+- Write the README.
+- Document configuration.
+- Document deployment.
+- Summarize implemented features.
+- Report test results accurately.
+- Identify any remaining external configuration.
+
+Do not stop after completing the plan. Continue implementing the application in the workspace.
+
+If the task is too large for a single generation pass, complete it in coherent phases while preserving existing work. Continue from the current project state rather than restarting or discarding functional code.
+
+==================================================
+25. ACCEPTANCE CRITERIA
+==================================================
+
+The project is acceptable only when the following criteria have been addressed:
+
+[ ] Professional responsive UI
+[ ] Working registration and login
+[ ] Working logout and password reset
+[ ] Protected routes
+[ ] Persistent user profiles
+[ ] Skill management
+[ ] Real project search and filtering
+[ ] Project details
+[ ] AI-assisted adaptive quiz
+[ ] Server-validated assessment scoring
+[ ] Saved assessment history
+[ ] Personalized recommendation scoring
+[ ] Explainable matching and missing skills
+[ ] Working project application form
+[ ] Duplicate application prevention
+[ ] Persistent My Applications page
+[ ] Correct application status permissions
+[ ] Secure Firestore data access
+[ ] Server-side Gemini integration
+[ ] Validated AI response handling
+[ ] Fallback behavior when AI is unavailable
+[ ] Loading, empty, success, and error states
+[ ] Responsive mobile layout
+[ ] Unit tests for critical logic
+[ ] Integration tests where supported
+[ ] Production build checked
+[ ] Setup and troubleshooting documentation
+[ ] Deployment instructions
+[ ] Honest test report
+
+A checkbox must not be marked complete merely because related code exists. Verify the behavior or clearly report that it remains unverified.
+
+==================================================
+26. FINAL INSTRUCTIONS
+==================================================
+
+Start by inspecting the current Google AI Studio workspace.
+
+Then implement DevMatch as a complete, coherent, full-stack application.
+
+Prioritize functional correctness, secure data handling, reliable persistence, and a smooth user experience over decorative complexity.
+
+Do not return only a tutorial or code snippets.
+
+Create the actual application files, run available checks, inspect the results, and fix issues.
+
+When finished, provide a concise delivery report containing:
+1. Features implemented.
+2. Technology stack.
+3. Database and authentication configuration status.
+4. Gemini integration status.
+5. Tests actually executed and their results.
+6. Build status.
+7. Any remaining configuration required from me.
+8. Exact steps to preview and deploy the application.
+9. Any known limitations.
+
+Be transparent about anything that could not be tested.
+
+BEGIN NOW: inspect the workspace and start implementing DevMatch.

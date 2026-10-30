@@ -1,0 +1,8 @@
+{
+  "name": "DevMatch",
+  "description": "AI-powered developer project matching platform with adaptive skill assessments, personalized scoring, and application tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
